@@ -1,0 +1,24 @@
+server:
+  port: 6969
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3306/mydb
+    username: root
+    hikari:
+      idle-timeout: 3000
+      maximum-pool-size: 50
+      max-lifetime: 30000
+  jpa:
+    hibernate:
+      ddl-auto: none
+    open-in-view: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        event:
+          merge:
+            entity_copy_observer: allow
+    show-sql: true
