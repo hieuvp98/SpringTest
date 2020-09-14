@@ -10,7 +10,6 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 import javax.persistence.EntityManager;
 import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.CriteriaUpdate;
 import javax.persistence.criteria.Root;
 import java.util.List;
@@ -24,12 +23,11 @@ public class BaseService<T> {
 
     private final EntityManager entityManager;
 
-    public BaseService(JpaSpecificationExecutor<T> repo, Class clazz, EntityManager entityManager) {
+    public BaseService(JpaSpecificationExecutor<T> repo, Class<T> clazz, EntityManager entityManager) {
         this.repo = repo;
         this.clazz = clazz;
         this.entityManager = entityManager;
     }
-
 
     public T save(T data) throws Exception{
         return (T) ((JpaRepository) repo).save(data);

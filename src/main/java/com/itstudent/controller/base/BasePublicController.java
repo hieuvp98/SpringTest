@@ -1,4 +1,4 @@
-package com.itstudent.controller;
+package com.itstudent.controller.base;
 
 import com.itstudent.entities.json.JsonResult;
 import com.itstudent.entities.json.PageJson;
@@ -10,22 +10,22 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-public class BasicPublicController<T> {
+public class BasePublicController<T> {
 
     private final BaseService<T> service;
 
-    public BasicPublicController(BaseService<T> service) {
+    public BasePublicController(BaseService<T> service) {
         this.service = service;
     }
 
     @GetMapping
     public ResponseEntity<JsonResult<List<T>>> search(@RequestParam(value = "queries", required = false) List<String> queries,
-                                                @RequestParam(value = "sort", required = false) String sort) throws Exception{
+                                                      @RequestParam(value = "sort", required = false) String sort) throws Exception{
         return JsonResult.success(service.filterWithSort(queries, sort));
     }
 
     @GetMapping("/page")
-    public ResponseEntity<JsonResult<PageJson<T>>> searchByPage(@RequestParam(value = "queries", required = false) List<String> queries,
+    public ResponseEntity<JsonResult<PageJson<T>>> searchWithPage(@RequestParam(value = "queries", required = false) List<String> queries,
                                                                 @RequestParam(value = "sort", required = false) String sort, Pageable pageable) throws Exception{
         return JsonResult.success(service.filterByPageWithSort(queries, pageable, sort));
     }

@@ -1,16 +1,13 @@
 server:
-  port: 6969
+  port: 8080
 
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    password: root
-    url: jdbc:mysql://localhost:3306/mydb
-    username: root
-    hikari:
-      idle-timeout: 3000
-      maximum-pool-size: 50
-      max-lifetime: 30000
+    url: jdbc:mysql://db.bksoftwarevn.com:6633/backend_class
+    username: backend
+    password: fcojhsbtxzdu
+
   jpa:
     hibernate:
       ddl-auto: none

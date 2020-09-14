@@ -9,19 +9,19 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 public class MyExceptionHandler {
 
     @ExceptionHandler
-    public ResponseEntity<JsonResult> handler(Exception e){
+    public ResponseEntity<JsonResult<String>> handler(Exception e){
         e.printStackTrace();
         return JsonResult.error(e);
     }
 
     @ExceptionHandler
-    public ResponseEntity<JsonResult> handlerNotFound(NotFoundException e){
+    public ResponseEntity<JsonResult<String>> handlerNotFound(NotFoundException e){
         e.printStackTrace();
         return JsonResult.notFound(e.getMessage());
     }
 
     @ExceptionHandler
-    public ResponseEntity<JsonResult> handlerBadRequest(BadRequestException e){
+    public ResponseEntity<JsonResult<String>> handlerBadRequest(BadRequestException e){
         e.printStackTrace();
         return JsonResult.badRequest(400,e.getMessage());
     }

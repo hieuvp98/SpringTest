@@ -31,20 +31,20 @@ public class JsonResult<T> {
     }
 
     //loi ng dung
-    public static  ResponseEntity<JsonResult> badRequest(int code, String mess) {
+    public static  ResponseEntity<JsonResult<String>> badRequest(int code, String mess) {
         return ResponseEntity.badRequest().body(new JsonResult<>(code, "no data", mess));
     }
 
-    public static  ResponseEntity<JsonResult> notFound( String mess) {
+    public static  ResponseEntity<JsonResult<String>> notFound( String mess) {
         return ResponseEntity.status(404).body(new JsonResult<>(404, "no data", mess));
     }
 
-    public static  ResponseEntity<JsonResult> noAuthor() {
+    public static  ResponseEntity<JsonResult<String>> noAuthor() {
         return ResponseEntity.status(401).body(new JsonResult<>(401, "no data", "no authenticated"));
     }
 
     //loi he thong
-    public static ResponseEntity<JsonResult> error(Exception ex) {
+    public static ResponseEntity<JsonResult<String>> error(Exception ex) {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                 .body(new JsonResult<>(HttpStatus.INTERNAL_SERVER_ERROR.value(), "no data", ex.toString()));
     }
