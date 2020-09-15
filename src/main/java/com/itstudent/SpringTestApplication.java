@@ -1,6 +1,7 @@
 package com.itstudent;
 
 import com.itstudent.example.di.*;
+import com.itstudent.example.test.SpringOutfitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -20,11 +21,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootApplication
-@EnableSwagger2
+//@EnableSwagger2
 public class SpringTestApplication implements CommandLineRunner {
 
     @Autowired
     private ConfigurableApplicationContext context;
+
+    @Autowired
+    private SpringOutfitService springOutfitService;
 
     public static void main(String[] args) {
         SpringApplication.run(SpringTestApplication.class, args);
@@ -41,13 +45,7 @@ public class SpringTestApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        context.getBeanFactory()
-                .registerSingleton("bikini2", new Bikini());
-        Outfit bikini = context.getBean("bikini",Outfit.class);
-        context.getBeanFactory().destroyBean(bikini);
-        for (String s : context.getBeanNamesForType(Outfit.class)) {
-            System.out.println(s);
-        }
-        bikini.wear();
+        System.out.println(springOutfitService.sortByPrice());
+
     }
 }

@@ -17,7 +17,7 @@ public class OutfitConfig {
     @Autowired
     private ApplicationContext context;
 
-    @Bean
+    @Bean(initMethod = "init")
     public Girl junVu(){
         Girl girl = new Girl();
         girl.setOutfit(context.getBean(Hoodie.class));
