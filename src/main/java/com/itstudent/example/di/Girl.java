@@ -12,6 +12,5 @@ public class Girl {
     private Hoodie outfit;
 
     public void init(){
-        System.out.println("girl init");
     }
 }

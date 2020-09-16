@@ -14,17 +14,14 @@ public class Bikini implements Outfit, InitializingBean, DisposableBean {
 
     @PostConstruct
     public void init(){
-        System.out.println("Bikini được tạo");
+
     }
 
     public Bikini() {
-        System.out.println("Bikini init ");
     }
 
     @PreDestroy
-    public void preDestroy(){
-        System.out.println("Bikini bị huỷ");
-    }
+    public void preDestroy(){ }
 
     @Override
     public void wear() {

@@ -1,17 +1,13 @@
 package com.itstudent.entities.data;
 
 import lombok.Data;
-import lombok.experimental.Accessors;
 
 import javax.persistence.*;
-import java.io.Serializable;
 
 @Entity
-@Table(name = "brand")
+@Table(schema = "backend_class",name = "brand")
 @Data
-public class Brand implements Serializable {
-
-    private static final long serialVersionUID = 1L;
+public class Brand {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,5 +19,4 @@ public class Brand implements Serializable {
 
     @Column(name = "deleted")
     private Boolean deleted;
-
 }
