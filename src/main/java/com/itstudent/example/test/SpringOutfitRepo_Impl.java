@@ -18,13 +18,15 @@ public class SpringOutfitRepo_Impl implements SpringOutfitRepo{
 
         springOutfits.add(SpringOutfit
                 .builder()
-                .name("One")
+                .id(1)
+                .name("H&M")
                 .price(5)
                 .build());
 
         springOutfits.add(SpringOutfit
                 .builder()
-                .name("Two")
+                .id(2)
+                .name("Louis Vuiton")
                 .price(4)
                 .build());
     }

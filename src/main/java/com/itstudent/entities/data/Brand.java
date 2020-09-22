@@ -1,11 +1,15 @@
 package com.itstudent.entities.data;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Entity
 @Table(schema = "backend_class",name = "brand")
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 public class Brand {
 

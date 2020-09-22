@@ -18,7 +18,7 @@ public class SpringOutfitService_Impl implements SpringOutfitService {
         List<SpringOutfit> outfits = repo.findAll();
 
         outfits.sort(((o1, o2) -> {
-          return  o1.getName().compareTo(o2.getName());
+            return o1.getName().compareTo(o2.getName());
         }));
 
         return outfits;
@@ -31,12 +31,35 @@ public class SpringOutfitService_Impl implements SpringOutfitService {
     }
 
     @Override
-    public SpringOutfit findByName(String name) {
-        return repo
-                .findAll()
-                .stream()//tạo suối
-                .filter(so -> so.getName().equals(name))// bộ lọc -> suối mới
-                .findFirst() // tìm phần tử đầu trả về optional
-                .orElse(null);
+    public SpringOutfit findById(int id) {
+        return repo.findAll()
+                .stream()
+                .filter(object -> object.getId() == id)
+                .findFirst().orElse(null);
+    }
+
+    @Override
+    public void save(SpringOutfit springOutfit) {
+        List<SpringOutfit> springOutfits = repo.findAll();
+
+        if (springOutfit.getId() == null) {
+            springOutfit.setId(springOutfits.size() + 1);
+        } else {
+            SpringOutfit test = findById(springOutfit.getId());
+            if (test != null)
+                springOutfits.remove(test);
+        }
+        springOutfits.add(springOutfit);
+    }
+
+    @Override
+    public boolean delete(int id) {
+        List<SpringOutfit> springOutfits = repo.findAll();
+        SpringOutfit test = findById(id);
+        if (test != null) {
+            springOutfits.remove(test);
+            return true;
+        }
+        return false;
     }
 }
