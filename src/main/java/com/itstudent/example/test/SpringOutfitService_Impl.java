@@ -40,6 +40,7 @@ public class SpringOutfitService_Impl implements SpringOutfitService {
 
     @Override
     public void save(SpringOutfit springOutfit) {
+
         List<SpringOutfit> springOutfits = repo.findAll();
 
         if (springOutfit.getId() == null) {
@@ -55,6 +56,7 @@ public class SpringOutfitService_Impl implements SpringOutfitService {
     @Override
     public boolean delete(int id) {
         List<SpringOutfit> springOutfits = repo.findAll();
+
         SpringOutfit test = findById(id);
         if (test != null) {
             springOutfits.remove(test);

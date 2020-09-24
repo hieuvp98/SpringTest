@@ -1,6 +1,7 @@
 package com.itstudent.exception;
 
 import com.itstudent.entities.json.JsonResult;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -9,9 +10,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 public class MyExceptionHandler {
 
     @ExceptionHandler
-    public ResponseEntity<JsonResult<String>> handler(Exception e){
-        e.printStackTrace();
-        return JsonResult.error(e);
+    public ResponseEntity<String> handler(Exception e){
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .body(e.getMessage());
     }
 
     @ExceptionHandler
