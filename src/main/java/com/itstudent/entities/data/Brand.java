@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity
-//@Table(name = "brand")
+//@Table(schema = "backend",name = "brand")
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -17,7 +17,7 @@ public class Brand {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
 
     private String name;
 

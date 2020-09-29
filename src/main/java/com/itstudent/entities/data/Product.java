@@ -5,20 +5,22 @@ import lombok.experimental.Accessors;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Set;
 
 @Entity
 @Data
-public class Category{
-
+public class Product{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String name;
+    private boolean deleted;
 
-    private Boolean deleted;
+    @ManyToOne
+    @JoinColumn(name = "brand_id")
+    private Brand brand;
 
-    @OneToMany(mappedBy = "categoryy", fetch = FetchType.LAZY)
-    private Set<Product> products;
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category categoryy;
 }
