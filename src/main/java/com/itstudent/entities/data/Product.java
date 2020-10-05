@@ -14,6 +14,8 @@ public class Product{
     private Integer id;
 
     private String name;
+    private double price;
+    private long created;
     private boolean deleted;
 
     @ManyToOne
@@ -22,5 +24,5 @@ public class Product{
 
     @ManyToOne
     @JoinColumn(name = "category_id")
-    private Category categoryy;
+    private Category category;
 }

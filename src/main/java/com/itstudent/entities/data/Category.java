@@ -5,6 +5,7 @@ import lombok.experimental.Accessors;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -18,7 +19,4 @@ public class Category{
     private String name;
 
     private Boolean deleted;
-
-    @OneToMany(mappedBy = "categoryy", fetch = FetchType.LAZY)
-    private Set<Product> products;
 }

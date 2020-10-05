@@ -13,11 +13,16 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface BrandRepository extends JpaRepository<Brand, Integer>{
+public interface BrandRepository extends JpaRepository<Brand, Integer>,
+        JpaSpecificationExecutor<Brand>{
 
     List<Brand> findByNameContainsAndDeletedFalse(String name);
 
     List<Brand> findByIdInOrderByIdDesc(List<Integer> ids);
+
+    @Modifying
+    @Transactional
+    long deleteBrandById(Integer id);
 
     @Query("from Brand b where b.id = :id and b.deleted = false")
     Optional<Brand> findById(@Param("id") int id);

@@ -7,6 +7,6 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 public class QueryBrand {
-    private int id;
+    private Integer id;
     private String name;
 }

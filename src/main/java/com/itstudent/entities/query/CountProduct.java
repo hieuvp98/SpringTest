@@ -7,5 +7,5 @@ import lombok.Data;
 @AllArgsConstructor
 public class CountProduct {
     private String topic;
-    private long quantity;
+    private Long quantity;
 }

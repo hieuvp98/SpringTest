@@ -19,13 +19,13 @@ public class BrandControllerFake {
     private final BrandRepository brandRepository;
 
     @GetMapping
-    public ResponseEntity<Page<Brand>> findAllWithPage(Pageable pageable) {
-        Sort sort = Sort.by("name");
-        Pageable pageable1 = PageRequest.of(0, 10, sort);
-        Example<Brand> example = Example.of(Brand.builder().deleted(false).build());
-        brandRepository.findAll(example, pageable1);
+    public ResponseEntity<Object> findAll() {
+        return ResponseEntity.ok(brandRepo.findAll());
+    }
 
-        return ResponseEntity.ok(brandRepository.findAll(pageable));
+    @GetMapping("/{id}")
+    public ResponseEntity<Object> findById2(@PathVariable("id") int id ){
+        return ResponseEntity.ok(brandRepo.findByIdSimple(id));
     }
 
     @PostMapping
@@ -40,8 +40,6 @@ public class BrandControllerFake {
     @DeleteMapping("/{id}")
     @Transactional
     public ResponseEntity<String> deleteById(@PathVariable("id") int id) {
-
-
         if (brandRepo.delete(id))
             return ResponseEntity.noContent().build();
         return ResponseEntity.badRequest().build();

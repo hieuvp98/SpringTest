@@ -1,12 +1,15 @@
 package com.itstudent.repository;
 
 import com.itstudent.entities.data.Brand;
-import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.itstudent.entities.query.CountProduct;
+import com.itstudent.entities.query.QueryBrand;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.*;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+import javax.persistence.TypedQuery;
 import java.util.List;
 
 @Repository
@@ -19,27 +22,53 @@ public class BrandRepoImpl implements BrandRepoExample {
 //    EntityManagerFactory factory;
 
     @Override
-    public Brand findById(int id) throws Exception{
-       TypedQuery<Brand> query =
-               entityManager.createQuery("select b from Brand b " +
-                "where b.id = :id " +
-                "and b.deleted = false", Brand.class);
-       query.setParameter("id", id);
-       return query.getSingleResult();
+    public Brand findById(int id) throws Exception {
+        TypedQuery<Brand> query = entityManager
+                .createQuery("select b from Brand b" +
+                        " where b.id = :id and b.deleted = false", Brand.class);
+        query.setParameter("id", id);
+        return query.getSingleResult();
+    }
+
+    @Override
+    public QueryBrand findByIdSimple(int id) {
+        TypedQuery<QueryBrand> query = entityManager
+                .createQuery("select new com.itstudent" +
+                                ".entities.query.QueryBrand(b.id,b.name)" +
+                                " from Brand b" +
+                                " where b.id = :id and b.deleted = false",
+                        QueryBrand.class);
+        query.setParameter("id", id);
+        return query.getSingleResult();
+    }
+
+    @Override
+    public Object[] findByIdSimple2(int id) {
+        TypedQuery<Object[]> query = entityManager
+                .createQuery("select b.id,b.name" +
+                                " from Brand b" +
+                                " where b.id = :id and b.deleted = false",
+                        Object[].class);
+        query.setParameter("id", id);
+        return query.getSingleResult();
     }
 
     @Override
     public List<Brand> findAll() {
-        return entityManager
-                .createQuery("select b from Brand b " +
-                        "where b.deleted = false ").getResultList();
+        Query query =
+                entityManager.createQuery(
+                        "select b from Brand b where b.deleted = false");
+        query.setMaxResults(5);
+        return query.getResultList();
     }
 
     @Override
     public List<Brand> findByName(String name) {
-        Query query = entityManager
-                .createQuery("select b from Brand b" +
-                        " where b.name like concat('%',?1,'%')");
+        Query query =
+                entityManager.createQuery(
+                        "select b from Brand b " +
+                                "where b.name = ?1 " +
+                                "and b.deleted = false");
         query.setParameter(1, name);
         return query.getResultList();
     }
@@ -72,5 +101,23 @@ public class BrandRepoImpl implements BrandRepoExample {
                         " set b.deleted = true where b.id = ?1");
         query.setParameter(1, id);
         return query.executeUpdate() > 0;
+    }
+
+    @Override
+    public List<Integer> findAllIds() {
+        Query query =
+                entityManager.createQuery(
+                        "select b.id,b.name " +
+                                "from Brand b " +
+                                "where b.deleted = false");
+        return query.getResultList();
+    }
+
+    @Override
+    public List<CountProduct> countProduct() {
+       return entityManager.createQuery("select new " +
+                "com.itstudent.entities.query" +
+                ".CountProduct(p.brand.name,count(p))" +
+                " from Product p group by p.brand ").getResultList();
     }
 }
