@@ -2,16 +2,15 @@ package com.itstudent;
 
 import com.itstudent.entities.data.Address;
 import com.itstudent.entities.data.Brand;
-import com.itstudent.entities.data.Product;
-import com.itstudent.repository.BrandRepoExample;
+import com.itstudent.entities.data.Customer;
+import com.itstudent.repository.AddressRepo;
 import com.itstudent.repository.BrandRepository;
-import com.itstudent.repository.ProductRepo;
-import com.itstudent.utils.specification.BrandSpecification;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.jpa.domain.Specification;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
@@ -30,29 +29,14 @@ public class SpringTestApplication implements CommandLineRunner {
     private BrandRepository brandRepository;
 
     @Autowired
-    private ProductRepo productRepo;
+    private AddressRepo addressRepo;
 
     @PersistenceContext
     private EntityManager entityManager;
 
     @Override
     public void run(String... args) throws Exception {
-        Optional<Product> productOptional = productRepo.findById(1);
-
-        String brandName = productOptional
-                .map(p -> p.getBrand())
-                .map(b -> b.getName())
-                .orElse("not found");
-
-        productOptional.filter(p -> p.getPrice() > 100)
-                .ifPresent(p -> System.out.println(p.getPrice()));
-
-
-        Specification<Brand> conditions = Specification
-                .where(BrandSpecification.nameLike("a"))
-                .and(BrandSpecification.isNotDeleted())
-                .or(BrandSpecification.hasId(1));
-
-        List<Brand> brands = brandRepository.findAll(conditions);
+        addressRepo.findById2(6)
+        .ifPresent(a -> System.out.println(a.getCustomer().getName()));
     }
 }

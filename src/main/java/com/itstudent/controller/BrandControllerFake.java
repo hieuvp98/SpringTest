@@ -9,6 +9,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @AllArgsConstructor
 @RequestMapping("api/public/brands")
@@ -19,14 +21,41 @@ public class BrandControllerFake {
     private final BrandRepository brandRepository;
 
     @GetMapping
-    public ResponseEntity<Object> findAll() {
-        return ResponseEntity.ok(brandRepo.findAll());
+    public ResponseEntity<Object> findAll(@RequestParam(value = "id",required = false) Integer id,
+                                          @RequestParam(value = "name", required = false) String name) {
+
+        Brand brand = Brand.builder()
+                .id(id)
+                .name(name)
+                .deleted(false)
+                .build();
+
+        ExampleMatcher matcher = ExampleMatcher.matchingAll()
+                .withMatcher("name", ExampleMatcher
+                        .GenericPropertyMatchers.contains());
+
+        Example<Brand> brandExample = Example.of(brand, matcher);
+
+        return ResponseEntity.ok(brandRepository.findAll(brandExample));
     }
+
+    @GetMapping("/page")
+    public ResponseEntity<Object> page(Pageable pageable){
+        return ResponseEntity.ok(brandRepository.findAll(pageable));
+    }
+
 
     @GetMapping("/{id}")
     public ResponseEntity<Object> findById2(@PathVariable("id") int id ){
         return ResponseEntity.ok(brandRepo.findByIdSimple(id));
     }
+
+    @GetMapping("/ids")
+    public ResponseEntity<Object> findByIds(@RequestParam("ids") List<Integer> ids){
+        return ResponseEntity.ok(brandRepository.findByIdInAndDeletedFalse(ids));
+    }
+
+
 
     @PostMapping
     public ResponseEntity<String> upload(@RequestBody Brand brand) {
@@ -38,10 +67,8 @@ public class BrandControllerFake {
 
 
     @DeleteMapping("/{id}")
-    @Transactional
-    public ResponseEntity<String> deleteById(@PathVariable("id") int id) {
-        if (brandRepo.delete(id))
-            return ResponseEntity.noContent().build();
-        return ResponseEntity.badRequest().build();
+    public ResponseEntity<Void> deleteById(@PathVariable("id") int id) {
+        brandRepository.delete(id);
+        return ResponseEntity.noContent().build();
     }
 }

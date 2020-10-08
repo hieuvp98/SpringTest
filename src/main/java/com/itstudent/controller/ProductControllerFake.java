@@ -5,10 +5,7 @@ import com.itstudent.repository.ProductRepo;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.EntityManager;
 
@@ -17,16 +14,22 @@ import javax.persistence.EntityManager;
 @AllArgsConstructor
 public class ProductControllerFake {
 
-    private final ProductRepo productRepo;
-
     private EntityManager entityManager;
+
+    private ProductRepo productRepo;
 
     @PostMapping
     @Transactional
     public ResponseEntity<Void> post(@RequestBody Product product) {
-//        product.setCategoryy(entityManager.getReference(Category.class, product.getCategoryy().getId()));
-//        product.setBrand(entityManager.getReference(Brand.class, product.getBrand().getId()));
         entityManager.persist(product);
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.ok().build();
+    }
+
+    @GetMapping("/filter")
+    public ResponseEntity<Object> filter(@RequestParam("category") Integer cateId,
+                                         @RequestParam("brand") Integer brandId,
+                                         @RequestParam("name") String name) {
+        return ResponseEntity.ok(productRepo
+                .findByCategory_IdAndBrand_IdAndNameContains(cateId, brandId, name));
     }
 }

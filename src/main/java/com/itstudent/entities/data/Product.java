@@ -18,7 +18,7 @@ public class Product{
     private long created;
     private boolean deleted;
 
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.PERSIST})
     @JoinColumn(name = "brand_id")
     private Brand brand;
 

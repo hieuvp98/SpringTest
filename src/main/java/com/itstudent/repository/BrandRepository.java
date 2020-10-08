@@ -13,22 +13,18 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface BrandRepository extends JpaRepository<Brand, Integer>,
-        JpaSpecificationExecutor<Brand>{
+public interface BrandRepository extends JpaRepository<Brand, Integer>{
 
-    List<Brand> findByNameContainsAndDeletedFalse(String name);
+    @Query("from Brand b where b.id = ?1 and b.deleted = false")
+    Brand findByIdAndDeletedFalse(Integer id);
 
-    List<Brand> findByIdInOrderByIdDesc(List<Integer> ids);
+    Long countByNameContainsAndDeletedFalse(String name);
 
-    @Modifying
+    List<Brand> findByIdInAndDeletedFalse(List<Integer> ids);
+
+    @Query("update Brand b set b.deleted = true where b.id = ?1")
     @Transactional
-    long deleteBrandById(Integer id);
-
-    @Query("from Brand b where b.id = :id and b.deleted = false")
-    Optional<Brand> findById(@Param("id") int id);
-
-    @Query("update Brand b set b.deleted = false where b.id = ?1")
     @Modifying
-    @Transactional
-    int customDelete(Integer id);
+    long delete(Integer id);
+
 }
