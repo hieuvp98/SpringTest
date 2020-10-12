@@ -27,9 +27,8 @@ public class ProductControllerFake {
 
     @GetMapping("/filter")
     public ResponseEntity<Object> filter(@RequestParam("category") Integer cateId,
-                                         @RequestParam("brand") Integer brandId,
-                                         @RequestParam("name") String name) {
+                                         @RequestParam("brand") Integer brandId) {
         return ResponseEntity.ok(productRepo
-                .findByCategory_IdAndBrand_IdAndNameContains(cateId, brandId, name));
+                .findByCategory_IdAndBrand_IdAndDeletedFalse(cateId, brandId));
     }
 }

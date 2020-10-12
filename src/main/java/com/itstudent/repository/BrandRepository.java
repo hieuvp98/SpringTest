@@ -9,22 +9,21 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import java.util.List;
 import java.util.Optional;
 
 @Repository
 public interface BrandRepository extends JpaRepository<Brand, Integer>{
 
-    @Query("from Brand b where b.id = ?1 and b.deleted = false")
-    Brand findByIdAndDeletedFalse(Integer id);
+    List<Brand> findByNameContainsOrderByNameDesc(String name);
 
-    Long countByNameContainsAndDeletedFalse(String name);
+    List<Brand> findByNameContainsAndDeleted(String name, Boolean a);
 
-    List<Brand> findByIdInAndDeletedFalse(List<Integer> ids);
-
-    @Query("update Brand b set b.deleted = true where b.id = ?1")
-    @Transactional
     @Modifying
-    long delete(Integer id);
+    @Transactional
+    int deleteById(int id);
+
+
 
 }

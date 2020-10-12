@@ -10,6 +10,10 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
 import java.util.List;
 
 @Repository
@@ -28,6 +32,18 @@ public class BrandRepoImpl implements BrandRepoExample {
                         " where b.id = :id and b.deleted = false", Brand.class);
         query.setParameter("id", id);
         return query.getSingleResult();
+    }
+
+    @Override
+    public Brand findById2(int id) {
+        // tạo jpql query
+        CriteriaBuilder builder = entityManager.getCriteriaBuilder();
+        CriteriaQuery<Brand> criteriaQuery = builder.createQuery(Brand.class);
+        Root<Brand> root = criteriaQuery.from(Brand.class);
+        Predicate predicate = builder.equal(root.get("id"), id);
+        criteriaQuery.select(root).where(predicate);
+        //
+        return entityManager.createQuery(criteriaQuery).getSingleResult();
     }
 
     @Override
@@ -59,6 +75,18 @@ public class BrandRepoImpl implements BrandRepoExample {
                 entityManager.createQuery(
                         "select b from Brand b where b.deleted = false");
         query.setMaxResults(5);
+        return query.getResultList();
+    }
+
+    @Override
+    public List<Brand> findAll2() {
+        // tạo jpql query
+        CriteriaBuilder builder = entityManager.getCriteriaBuilder();
+        CriteriaQuery<Brand> criteriaQuery = builder.createQuery(Brand.class);
+        Root<Brand> root = criteriaQuery.from(Brand.class);
+        criteriaQuery.select(root);
+        //
+        Query query = entityManager.createQuery(criteriaQuery);
         return query.getResultList();
     }
 

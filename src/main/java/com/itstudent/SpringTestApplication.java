@@ -36,7 +36,6 @@ public class SpringTestApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        addressRepo.findById2(6)
-        .ifPresent(a -> System.out.println(a.getCustomer().getName()));
+
     }
 }
