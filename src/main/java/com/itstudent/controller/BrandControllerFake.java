@@ -1,15 +1,12 @@
 package com.itstudent.controller;
 
 import com.itstudent.entities.data.Brand;
-import com.itstudent.repository.BrandRepoExample;
-import com.itstudent.repository.BrandRepository;
+import com.itstudent.repository.interfac.BrandRepoExample;
+import com.itstudent.repository.interfac.BrandRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.*;
 import org.springframework.http.ResponseEntity;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @AllArgsConstructor

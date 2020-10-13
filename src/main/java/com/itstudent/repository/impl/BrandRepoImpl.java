@@ -1,8 +1,9 @@
-package com.itstudent.repository;
+package com.itstudent.repository.impl;
 
 import com.itstudent.entities.data.Brand;
 import com.itstudent.entities.query.CountProduct;
 import com.itstudent.entities.query.QueryBrand;
+import com.itstudent.repository.interfac.BrandRepoExample;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 

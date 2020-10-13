@@ -1,7 +1,7 @@
 package com.itstudent.controller;
 
 import com.itstudent.entities.data.Product;
-import com.itstudent.repository.ProductRepo;
+import com.itstudent.repository.interfac.ProductRepo;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;

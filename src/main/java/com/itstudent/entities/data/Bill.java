@@ -5,21 +5,38 @@ import lombok.experimental.Accessors;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.sql.Date;
-import java.util.List;
+import java.util.Date;
 
 @Entity
 @Data
-public class Bill {
+@Table(name = "bill")
+public class Bill implements Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
     private Integer id;
 
-    //... some properties
+    @Column(name = "created")
+    @Temporal(TemporalType.DATE)
+    private Date created;
 
-    @ManyToMany
-    @JoinTable(name = "bill_has_product", // tên bảng trung gian
-            joinColumns = @JoinColumn(name = "bill_id"), // khoá ngoại đến Entity hiện tại
-            inverseJoinColumns = @JoinColumn(name = "product_id")) // khoá ngoại đến Entity liên kết
-    private List<Product> products;
+    @Column(name = "customer")
+    private String customer;
+
+    @Column(name = "phone")
+    private Integer phone;
+
+    @Column(name = "email")
+    private String email;
+
+    @Column(name = "address")
+    private String address;
+
+    @Column(name = "total_money")
+    private Double totalMoney;
+
+    @Column(name = "deleted")
+    private Boolean deleted;
+
 }

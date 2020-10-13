@@ -1,4 +1,4 @@
-package com.itstudent.repository;
+package com.itstudent.repository.interfac;
 
 import com.itstudent.entities.data.Brand;
 

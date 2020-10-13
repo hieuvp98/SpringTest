@@ -1,7 +1,7 @@
-package com.itstudent.repository;
+package com.itstudent.repository.impl;
 
-import com.itstudent.entities.data.Brand;
 import com.itstudent.entities.data.Product;
+import com.itstudent.repository.interfac.ProductRepoCriteria;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
