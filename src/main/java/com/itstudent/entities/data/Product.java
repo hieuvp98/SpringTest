@@ -21,7 +21,6 @@ public class Product{
 
     private String name;
     private double price;
-    private long created;
     private boolean deleted;
 
     @ManyToOne(cascade = {CascadeType.PERSIST})

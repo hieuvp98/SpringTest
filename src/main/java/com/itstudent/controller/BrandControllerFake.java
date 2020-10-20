@@ -1,5 +1,7 @@
 package com.itstudent.controller;
 
+import com.itstudent.aop.LogAfter;
+import com.itstudent.aop.LogTime;
 import com.itstudent.entities.data.Brand;
 import com.itstudent.repository.interfac.BrandRepoExample;
 import com.itstudent.repository.interfac.BrandRepository;
@@ -38,6 +40,7 @@ public class BrandControllerFake {
     }
 
     @GetMapping("/page")
+    @LogTime
     public ResponseEntity<Object> page(Pageable pageable) {
         return ResponseEntity.ok(brandRepository.findAll(pageable));
     }

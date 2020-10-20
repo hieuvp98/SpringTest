@@ -1,5 +1,7 @@
 package com.itstudent;
 
+import com.itstudent.aop.LogAfter;
+import com.itstudent.aop.LogTime;
 import com.itstudent.repository.interfac.AddressRepo;
 import com.itstudent.repository.interfac.BrandRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,12 +19,6 @@ public class SpringTestApplication implements CommandLineRunner {
         SpringApplication.run(SpringTestApplication.class, args);
     }
 
-    @Autowired
-    private BrandRepository brandRepository;
-
-    @Autowired
-    private AddressRepo addressRepo;
-
     @PersistenceContext
     private EntityManager entityManager;
 
@@ -30,4 +26,5 @@ public class SpringTestApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
     }
+
 }
