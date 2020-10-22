@@ -1,9 +1,6 @@
 package com.itstudent;
 
-import com.itstudent.aop.LogAfter;
-import com.itstudent.aop.LogTime;
-import com.itstudent.repository.interfac.AddressRepo;
-import com.itstudent.repository.interfac.BrandRepository;
+import com.itstudent.service.SendMailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -22,9 +19,12 @@ public class SpringTestApplication implements CommandLineRunner {
     @PersistenceContext
     private EntityManager entityManager;
 
+    @Autowired
+    private SendMailService sendMailService;
+
     @Override
     public void run(String... args) throws Exception {
-
+        sendMailService.sendMail("hieu@mai","","");
     }
 
 }

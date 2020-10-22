@@ -2,7 +2,6 @@ package com.itstudent.controller.public_api;
 
 import com.itstudent.controller.base.BasePublicController;
 import com.itstudent.entities.data.Product;
-import com.itstudent.service.BaseService;
 import com.itstudent.service_impl.ProductServiceImpl;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;

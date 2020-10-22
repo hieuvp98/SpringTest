@@ -26,11 +26,11 @@ public class SendMailServiceImpl implements SendMailService {
     public boolean sendMail(String userMail, String header, String content) {
         try {
             SimpleMailMessage mail = new SimpleMailMessage();
-            mail.setTo(userMail);
-            mail.setFrom(emailSender);
-            mail.setSubject(header);
-            mail.setText(content);
-            javaMailSender.send(mail);
+            mail.setTo(userMail); // nguời nhận
+            mail.setFrom(emailSender); // người gửi
+            mail.setSubject(header); // tiêu đề
+            mail.setText(content); // nội dung
+            javaMailSender.send(mail); // gửi mail
             return true;
         } catch (MailException ex) {
             ex.printStackTrace();
@@ -49,7 +49,8 @@ public class SendMailServiceImpl implements SendMailService {
             mail.setText(content, true);
             //String[] cc = {"aa@mail.com","hieu2@gmail.com"};
             //mail.setCc(cc);
-            // mail.addAttachment("ảnh",new File("D:\\image\\a.jpg"));
+            //mail.addAttachment("ảnh",new File("D:\\image\\a.jpg"));
+            //mail.setSentDate(); hẹn giờ gửi
             javaMailSender.send(mimeMessage);
             return true;
         } catch (MailException | MessagingException ex) {
