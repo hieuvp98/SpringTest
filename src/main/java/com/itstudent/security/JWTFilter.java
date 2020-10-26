@@ -6,6 +6,7 @@ import org.springframework.core.annotation.Order;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @Order(1)
@@ -16,13 +17,13 @@ public class JWTFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        HttpServletRequest request = (HttpServletRequest) servletRequest;
-        String token = request.getHeader("Authorization");
-        if (token != null){
-            String userName = jwtService.decode(token);
-            boolean userExists = userRepository.existsByUsernameAndDeletedFalse(userName);
-            if (userExists)
+        HttpServletResponse rs = (HttpServletResponse) servletResponse;
+        String token = servletRequest.getParameter("token");
+        if (token != null) {
+            String username = jwtService.decode(token);
+            if (username != null && userRepository.existsByUsernameAndDeletedFalse(username))
                 filterChain.doFilter(servletRequest, servletResponse);
-        }
+            else rs.setStatus(401);
+        } else rs.setStatus(401);
     }
 }

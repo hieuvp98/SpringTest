@@ -1,6 +1,6 @@
 package com.itstudent.controller;
 
-import org.apache.tomcat.jni.File;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,12 +20,14 @@ public class UploadController {
     @Value("${file.upload.location}")
     private String location;
 
-    @PostMapping()
+    @PostMapping
     public ResponseEntity<Object> upload(
             @RequestParam("files") MultipartFile[] files) throws Exception{
-        Path folder = Paths.get(location);
-        for (MultipartFile file : files) {
-            Files.copy(file.getInputStream(), folder.resolve(file.getOriginalFilename()));
+        Path folder = Paths.get(location); // lấy thư mục upload
+        for (MultipartFile file : files) { // duyệt tất cả file
+            // copy data từ multipart file -> file mới
+            Files.copy(file.getInputStream(),
+                    folder.resolve(file.getOriginalFilename()));// tạo file
         }
         return ResponseEntity.noContent().build();
     }

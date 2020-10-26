@@ -24,7 +24,6 @@ public class SpringTestApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        sendMailService.sendMail("hieu@mai","","");
     }
 
 }

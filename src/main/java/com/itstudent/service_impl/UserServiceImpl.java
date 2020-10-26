@@ -7,7 +7,6 @@ import com.itstudent.repository.interfac.UserRepository;
 import com.itstudent.service.UserService;
 import com.itstudent.utils.EncodeUtil;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -20,7 +19,7 @@ public class UserServiceImpl implements UserService {
     public boolean login(LoginForm loginForm){
         return userRepository
                 .existsByUsernameAndPasswordAndDeletedFalse(loginForm.getUsername()
-                        ,loginForm.getPassword());
+                        ,EncodeUtil.getSHA256(loginForm.getPassword()));
     }
 
     @Override
@@ -34,6 +33,7 @@ public class UserServiceImpl implements UserService {
                     .deleted(false)
                     .build();
             userRepository.save(appUser);
+            return true;
         }
         return false;
     }
