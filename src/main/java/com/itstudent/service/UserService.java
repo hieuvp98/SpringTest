@@ -6,4 +6,5 @@ import com.itstudent.entities.payload.RegisterForm;
 public interface UserService {
     boolean register(RegisterForm form) throws Exception;
     boolean login(LoginForm loginForm);
+    boolean existsUsername(String username);
 }

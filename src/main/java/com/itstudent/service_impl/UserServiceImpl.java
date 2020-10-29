@@ -23,6 +23,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public boolean existsUsername(String username) {
+        return userRepository.existsByUsernameAndDeletedFalse(username);
+    }
+
+    @Override
     public boolean register(RegisterForm form) throws Exception{
         boolean existed = userRepository.existsByUsernameAndDeletedFalse(form.getUsername());
         if (!existed){
