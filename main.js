@@ -1,5 +1,5 @@
 $(() => {
-  chooseSelection(script);
+  chooseSelection(getScript("1"));
 });
 
 function chooseSelection(selection) {
@@ -8,10 +8,11 @@ function chooseSelection(selection) {
   $(".selections").html("");
   selection.selections.forEach((s, index) => {
     let selec = $("#selection-sample").clone();
-    selec.find(".selection-content").html(s.title);
+    let script = getScript(s);
+    selec.find(".selection-content").html(script.title);
     $(".selections").append(selec.html());
     $($(".selections a")[index]).off('click').on("click", function () {
-      chooseSelection(s);
+      chooseSelection(script);
     });
   });
 }
