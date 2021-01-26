@@ -1,0 +1,1628 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"defaultDiagram": true
+				},
+				{
+					"_type": "FCFlowchart",
+					"_id": "AAAAAAF3OfdXQdjEDw4=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Flowchart1",
+					"ownedElements": [
+						{
+							"_type": "FCFlowchartDiagram",
+							"_id": "AAAAAAF3OfdXQdjFOhg=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "FlowchartDiagram1",
+							"ownedViews": [
+								{
+									"_type": "FCProcessView",
+									"_id": "AAAAAAF3OfejudjLYf8=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OfejuNjJpuY="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF3OfejudjMhcE=",
+											"_parent": {
+												"$ref": "AAAAAAF3OfejudjLYf8="
+											},
+											"font": "Arial;13;0",
+											"left": 898,
+											"top": 50,
+											"width": 245,
+											"height": 208,
+											"text": "Bạn thức dậy sau một giấc ngủ không biết là bao lâu nhưng có cảm giác khá lâu. Đầu bạn đau, cơ thể thì mệt mỏi. Bạn nhận ra mình đang ở trên cái giường quen thuộc của mình, căn phòng tối tăm. Bạn xem đồng hồ đeo tay thấy đang là 2h sáng, bạn nhìn ra ngoài cửa sổ, căn hộ của bạn ở tầng 24 nên tầm nhìn khá rộng. Ngoài trời mưa đang đổ chéo, thỉnh thoảng có tiếng sấm chớp, chỉ còn lại những chiếc đèn đường đang thắp sáng. Bình thường vẫn có những chiếc xe tải chạy ban đêm có tiếng kêu khá khó chịu nhưng bây giờ lại không có chiếc xe nào. Bỗng nhiên có tiếng bước chân nghe khá rõ ở ngoài phòng khách làm bạn chú ý.",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 888,
+									"top": 40,
+									"width": 265,
+									"height": 228,
+									"nameLabel": {
+										"$ref": "AAAAAAF3OfejudjMhcE="
+									}
+								},
+								{
+									"_type": "FCDecisionView",
+									"_id": "AAAAAAF3OgJqWdjd4Bk=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OgJqWdjb+is="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF3OgJqWdje3IQ=",
+											"_parent": {
+												"$ref": "AAAAAAF3OgJqWdjd4Bk="
+											},
+											"font": "Arial;13;0",
+											"left": 988.542236328125,
+											"top": 295.5,
+											"width": 57.08447265625,
+											"height": 15,
+											"text": "sw 1",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 960,
+									"top": 288,
+									"width": 114.1689453125,
+									"height": 30,
+									"nameLabel": {
+										"$ref": "AAAAAAF3OgJqWdje3IQ="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAF3OgK1D9jo8kY=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OgK1D9jmveo="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAF3OgK1D9jpzGU=",
+											"_parent": {
+												"$ref": "AAAAAAF3OgK1D9jo8kY="
+											},
+											"model": {
+												"$ref": "AAAAAAF3OgK1D9jmveo="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 1031,
+											"top": 270,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 15,
+											"hostEdge": {
+												"$ref": "AAAAAAF3OgK1D9jo8kY="
+											},
+											"edgePosition": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAF3OgJqWdjd4Bk="
+									},
+									"tail": {
+										"$ref": "AAAAAAF3OfejudjLYf8="
+									},
+									"lineStyle": 2,
+									"points": "1017:267;1017:288",
+									"nameLabel": {
+										"$ref": "AAAAAAF3OgK1D9jpzGU="
+									}
+								},
+								{
+									"_type": "FCProcessView",
+									"_id": "AAAAAAF3OgLMndjxXjM=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OgLMndjvmUs="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF3OgLMndjyjkw=",
+											"_parent": {
+												"$ref": "AAAAAAF3OgLMndjxXjM="
+											},
+											"font": "Arial;13;0",
+											"left": 522,
+											"top": 354,
+											"width": 349,
+											"height": 78,
+											"text": "Bạn mở cửa phòng, bước ra ngoài xem đó là ai. Một bóng người đang đứng ở gần cửa vào và đang nắm tay cửa. Trong bóng tối bạn không nhìn rõ mặt nhưng qua hình dáng bạn có thể nhận ra đó là vợ mình nhưng lẽ ra cô ấy đang ở nhà mẹ cách đây hơn 100km, hai bạn vừa có một cuộc cãi vã nên cô ấy bỏ nhà mẹ và không thèm liên lạc với bạn.",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 512,
+									"top": 344,
+									"width": 369,
+									"height": 98,
+									"nameLabel": {
+										"$ref": "AAAAAAF3OgLMndjyjkw="
+									}
+								},
+								{
+									"_type": "FCProcessView",
+									"_id": "AAAAAAF3OgLbu9j5cY8=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OgLbu9j3Hxg="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF3OgLbu9j6hH4=",
+											"_parent": {
+												"$ref": "AAAAAAF3OgLbu9j5cY8="
+											},
+											"font": "Arial;13;0",
+											"left": 1122,
+											"top": 346,
+											"width": 205,
+											"height": 117,
+											"text": "Bạn chấn tĩnh lại bản thân và cho là mình nghe nhầm, bạn quay lại giường để tiếp tục giấc ngủ. Vì đang mệt nên bạn chìm vào giấc ngủ rất nhanh. Bỗng nhiên tiếng Tivi ở ngoài phòng khách làm bạn thức giấc lần nữa. Bạn xem đồng hồ, đang là 2h30, ngoài trời mưa gió đã bớt đi.",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 1112,
+									"top": 336,
+									"width": 225,
+									"height": 137,
+									"nameLabel": {
+										"$ref": "AAAAAAF3OgLbu9j6hH4="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAF3OgMCs9kB1b0=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OgMCs9j/WPw="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAF3OgMCs9kCldo=",
+											"_parent": {
+												"$ref": "AAAAAAF3OgMCs9kB1b0="
+											},
+											"model": {
+												"$ref": "AAAAAAF3OgMCs9j/WPw="
+											},
+											"font": "Arial;13;0",
+											"left": 695,
+											"top": 288,
+											"width": 130.1015625,
+											"height": 13,
+											"alpha": 1.72579273238662,
+											"distance": 64.77653896280658,
+											"hostEdge": {
+												"$ref": "AAAAAAF3OgMCs9kB1b0="
+											},
+											"edgePosition": 1,
+											"text": "Ra ngoài phòng khách"
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAF3OgLMndjxXjM="
+									},
+									"tail": {
+										"$ref": "AAAAAAF3OgJqWdjd4Bk="
+									},
+									"lineStyle": 2,
+									"points": "960:304;696:304;696:344",
+									"nameLabel": {
+										"$ref": "AAAAAAF3OgMCs9kCldo="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAF3OgOmZtkOJng=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OgOmZtkM3nU="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAF3OgOmZtkPZrM=",
+											"_parent": {
+												"$ref": "AAAAAAF3OgOmZtkOJng="
+											},
+											"model": {
+												"$ref": "AAAAAAF3OgOmZtkM3nU="
+											},
+											"font": "Arial;13;0",
+											"left": 1135,
+											"top": 287,
+											"width": 100.76904296875,
+											"height": 13,
+											"alpha": -1.7506499835873803,
+											"distance": 55.90169943749474,
+											"hostEdge": {
+												"$ref": "AAAAAAF3OgOmZtkOJng="
+											},
+											"edgePosition": 1,
+											"text": "Ở lại trong phòng"
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAF3OgLbu9j5cY8="
+									},
+									"tail": {
+										"$ref": "AAAAAAF3OgJqWdjd4Bk="
+									},
+									"lineStyle": 2,
+									"points": "1073:304;1240:304;1240:336",
+									"nameLabel": {
+										"$ref": "AAAAAAF3OgOmZtkPZrM="
+									}
+								},
+								{
+									"_type": "FCProcessView",
+									"_id": "AAAAAAF3OhnVj9kxQBY=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OhnVjtkv70A="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF3OhnVj9kyiTc=",
+											"_parent": {
+												"$ref": "AAAAAAF3OhnVj9kxQBY="
+											},
+											"font": "Arial;13;0",
+											"left": 522,
+											"top": 490,
+											"width": 349,
+											"height": 91,
+											"text": "Bạn cất tiếng hỏi: \"Em về rồi đấy à Ngọc? Anh xin lỗi, em hãy nghe...\". \"Tại sao anh lại làm thế?\" - cô ấy ngắt lời bạn. \"Mọi chuyện không như em nghĩ đâu\". Ngay khi bạn vừa nói hết câu, cô ấy ngay lập tức mở cửa bước ra ngoài và đóng cửa rất mạnh. Bạn nhanh chóng mở cửa để đuổi theo nhưng nhìn bên ngoài không thấy ai cả. Bạn suy nghĩ nên đi về phía bên trái có thang máy hay bên phải có thang bộ. ",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 512,
+									"top": 480,
+									"width": 369,
+									"height": 111,
+									"nameLabel": {
+										"$ref": "AAAAAAF3OhnVj9kyiTc="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAF3Ohn2H9k6UC4=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3Ohn2H9k4fSM="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAF3Ohn2INk7cwA=",
+											"_parent": {
+												"$ref": "AAAAAAF3Ohn2H9k6UC4="
+											},
+											"model": {
+												"$ref": "AAAAAAF3Ohn2H9k4fSM="
+											},
+											"font": "Arial;13;0",
+											"left": 701,
+											"top": 456,
+											"width": 70.65576171875,
+											"height": 13,
+											"alpha": 1.526380764262199,
+											"distance": 45.044422518220834,
+											"hostEdge": {
+												"$ref": "AAAAAAF3Ohn2H9k6UC4="
+											},
+											"edgePosition": 1,
+											"text": "Hỏi vợ mình"
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAF3OhnVj9kxQBY="
+									},
+									"tail": {
+										"$ref": "AAAAAAF3OgLMndjxXjM="
+									},
+									"lineStyle": 2,
+									"points": "692:441;692:480",
+									"nameLabel": {
+										"$ref": "AAAAAAF3Ohn2INk7cwA="
+									}
+								},
+								{
+									"_type": "FCDecisionView",
+									"_id": "AAAAAAF3OibGd9lbJnw=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OibGdtlZ8sc="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF3OibGd9lclv0=",
+											"_parent": {
+												"$ref": "AAAAAAF3OibGd9lbJnw="
+											},
+											"font": "Arial;13;0",
+											"left": 652.542236328125,
+											"top": 639.5,
+											"width": 57.08447265625,
+											"height": 15,
+											"text": "sw 2",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 624,
+									"top": 632,
+									"width": 114.1689453125,
+									"height": 30,
+									"nameLabel": {
+										"$ref": "AAAAAAF3OibGd9lclv0="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAF3OicRQdlmJ6w=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OicRQdlk7Rw="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAF3OicRQdlng1A=",
+											"_parent": {
+												"$ref": "AAAAAAF3OicRQdlmJ6w="
+											},
+											"model": {
+												"$ref": "AAAAAAF3OicRQdlk7Rw="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 698,
+											"top": 604,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 15,
+											"hostEdge": {
+												"$ref": "AAAAAAF3OicRQdlmJ6w="
+											},
+											"edgePosition": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAF3OibGd9lbJnw="
+									},
+									"tail": {
+										"$ref": "AAAAAAF3OhnVj9kxQBY="
+									},
+									"lineStyle": 2,
+									"points": "684:590;684:632",
+									"nameLabel": {
+										"$ref": "AAAAAAF3OicRQdlng1A="
+									}
+								},
+								{
+									"_type": "FCProcessView",
+									"_id": "AAAAAAF3Oic4Ldlv1xw=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3Oic4LNltZBo="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF3Oic4LdlwjCg=",
+											"_parent": {
+												"$ref": "AAAAAAF3Oic4Ldlv1xw="
+											},
+											"font": "Arial;13;0",
+											"left": 322,
+											"top": 698,
+											"width": 245,
+											"height": 78,
+											"text": "Bạn đi đến khu thang máy và nhanh tay bấm nút thang xuống liên tục. Có 2 thang cùng mở cửa một lúc, bạn cảm thấy khá lạ vì thường ngày chỉ có một thang máy đón người cùng thời điểm. Bạn nghĩ xem nên vào thang bên trái hay bên phải.",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 312,
+									"top": 688,
+									"width": 265,
+									"height": 98,
+									"nameLabel": {
+										"$ref": "AAAAAAF3Oic4LdlwjCg="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAF3OidOCNl3EVA=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OidOCNl1SA0="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAF3OidOCNl4xBU=",
+											"_parent": {
+												"$ref": "AAAAAAF3OidOCNl3EVA="
+											},
+											"model": {
+												"$ref": "AAAAAAF3OidOCNl1SA0="
+											},
+											"font": "Arial;13;0",
+											"left": 462,
+											"top": 664,
+											"width": 122.84619140625,
+											"height": 13,
+											"alpha": 1.3146447650736754,
+											"distance": 86.83317338436964,
+											"hostEdge": {
+												"$ref": "AAAAAAF3OidOCNl3EVA="
+											},
+											"edgePosition": 1,
+											"text": "Đi về phía thang máy"
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAF3Oic4Ldlv1xw="
+									},
+									"tail": {
+										"$ref": "AAAAAAF3OibGd9lbJnw="
+									},
+									"lineStyle": 2,
+									"points": "624:648;440:648;440:688",
+									"nameLabel": {
+										"$ref": "AAAAAAF3OidOCNl4xBU="
+									}
+								},
+								{
+									"_type": "FCProcessView",
+									"_id": "AAAAAAF3OilpdtmHKo8=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OilpddmF6F4="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF3OilpdtmICtQ=",
+											"_parent": {
+												"$ref": "AAAAAAF3OilpdtmHKo8="
+											},
+											"font": "Arial;13;0",
+											"left": 818,
+											"top": 698,
+											"width": 54.18994140625,
+											"height": 13,
+											"text": "Process2",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 808,
+									"top": 688,
+									"width": 74.18994140625,
+									"height": 33,
+									"nameLabel": {
+										"$ref": "AAAAAAF3OilpdtmICtQ="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAF3OimDG9mPRbQ=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OimDG9mN8JQ="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAF3OimDG9mQfDs=",
+											"_parent": {
+												"$ref": "AAAAAAF3OimDG9mPRbQ="
+											},
+											"model": {
+												"$ref": "AAAAAAF3OimDG9mN8JQ="
+											},
+											"font": "Arial;13;0",
+											"left": 710,
+											"top": 663,
+											"width": 112.7470703125,
+											"height": 13,
+											"alpha": -1.305589428115247,
+											"distance": 83.93449827097318,
+											"hostEdge": {
+												"$ref": "AAAAAAF3OimDG9mPRbQ="
+											},
+											"edgePosition": 1,
+											"text": "Đi về phía thang bộ"
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAF3OilpdtmHKo8="
+									},
+									"tail": {
+										"$ref": "AAAAAAF3OibGd9lbJnw="
+									},
+									"lineStyle": 2,
+									"points": "737:648;848:648;848:688",
+									"nameLabel": {
+										"$ref": "AAAAAAF3OimDG9mQfDs="
+									}
+								},
+								{
+									"_type": "FCDecisionView",
+									"_id": "AAAAAAF3OjTaYtm2Lew=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OjTaYdm0HHw="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF3OjTaYtm3MbI=",
+											"_parent": {
+												"$ref": "AAAAAAF3OjTaYtm2Lew="
+											},
+											"font": "Arial;13;0",
+											"left": 412.542236328125,
+											"top": 823.5,
+											"width": 57.08447265625,
+											"height": 15,
+											"text": "sw3",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 384,
+									"top": 816,
+									"width": 114.1689453125,
+									"height": 30,
+									"nameLabel": {
+										"$ref": "AAAAAAF3OjTaYtm3MbI="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAF3OjVKzdnBwfo=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OjVKzNm/MEQ="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAF3OjVKzdnCRj8=",
+											"_parent": {
+												"$ref": "AAAAAAF3OjVKzdnBwfo="
+											},
+											"model": {
+												"$ref": "AAAAAAF3OjVKzNm/MEQ="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 456,
+											"top": 793,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 15,
+											"hostEdge": {
+												"$ref": "AAAAAAF3OjVKzdnBwfo="
+											},
+											"edgePosition": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAF3OjTaYtm2Lew="
+									},
+									"tail": {
+										"$ref": "AAAAAAF3Oic4Ldlv1xw="
+									},
+									"lineStyle": 2,
+									"points": "442:785;442:816",
+									"nameLabel": {
+										"$ref": "AAAAAAF3OjVKzdnCRj8="
+									}
+								},
+								{
+									"_type": "FCProcessView",
+									"_id": "AAAAAAF3OjYnLNnLm30=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OjYnK9nJmXE="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF3OjYnLNnMNKw=",
+											"_parent": {
+												"$ref": "AAAAAAF3OjYnLNnLm30="
+											},
+											"font": "Arial;13;0",
+											"left": 122,
+											"top": 874,
+											"width": 165,
+											"height": 65,
+											"text": "Bạn bước vào thang máy, nghĩ xem nên xuống tầng hầm hay tầng một. Đèn thang máy có vẻ  hơi chập chờn.",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 112,
+									"top": 864,
+									"width": 185,
+									"height": 85,
+									"nameLabel": {
+										"$ref": "AAAAAAF3OjYnLNnMNKw="
+									}
+								},
+								{
+									"_type": "FCProcessView",
+									"_id": "AAAAAAF3Ojadk9nUcQo=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3Ojadk9nSIlI="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF3Ojadk9nV/8g=",
+											"_parent": {
+												"$ref": "AAAAAAF3Ojadk9nUcQo="
+											},
+											"font": "Arial;13;0",
+											"left": 466,
+											"top": 866,
+											"width": 221,
+											"height": 117,
+											"text": "Bạn bước vào thang máy và nghĩ xem nên xuống tầng một hay tầng hầm. Trong khi bạn đang suy nghĩ thì thang máy mở cửa ở tầng 12A. Một cô gái xách chiếc vali vội vàng chạy vào, có vẻ như cô ấy đang khóc. Cô gái nhanh chóng bấm đóng của thang sau đó hỏi bạn: \"Anh xuống thang nào vậy?\"",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 456,
+									"top": 856,
+									"width": 241,
+									"height": 137,
+									"nameLabel": {
+										"$ref": "AAAAAAF3Ojadk9nV/8g="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAF3OjbVwdneOzY=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OjbVwdnc08E="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAF3OjbVwdnfEIw=",
+											"_parent": {
+												"$ref": "AAAAAAF3OjbVwdneOzY="
+											},
+											"model": {
+												"$ref": "AAAAAAF3OjbVwdnc08E="
+											},
+											"font": "Arial;13;0",
+											"left": 271,
+											"top": 840,
+											"width": 83.83349609375,
+											"height": 13,
+											"alpha": 1.4475304172342995,
+											"distance": 113.86395390991831,
+											"hostEdge": {
+												"$ref": "AAAAAAF3OjbVwdneOzY="
+											},
+											"edgePosition": 1,
+											"text": "Thang bên trái"
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAF3OjYnLNnLm30="
+									},
+									"tail": {
+										"$ref": "AAAAAAF3OjTaYtm2Lew="
+									},
+									"lineStyle": 2,
+									"points": "384:832;200:832;200:864",
+									"nameLabel": {
+										"$ref": "AAAAAAF3OjbVwdnfEIw="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAF3OjdRKtnt/Wg=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OjdRKtnroAs="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAF3OjdRKtnueLk=",
+											"_parent": {
+												"$ref": "AAAAAAF3OjdRKtnt/Wg="
+											},
+											"model": {
+												"$ref": "AAAAAAF3OjdRKtnroAs="
+											},
+											"font": "Arial;13;0",
+											"left": 510,
+											"top": 839,
+											"width": 90.3525390625,
+											"height": 13,
+											"alpha": -1.367751330495784,
+											"distance": 69.42621983083913,
+											"hostEdge": {
+												"$ref": "AAAAAAF3OjdRKtnt/Wg="
+											},
+											"edgePosition": 1,
+											"text": "Thang bên phải"
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAF3Ojadk9nUcQo="
+									},
+									"tail": {
+										"$ref": "AAAAAAF3OjTaYtm2Lew="
+									},
+									"lineStyle": 2,
+									"points": "497:832;624:832;624:856",
+									"nameLabel": {
+										"$ref": "AAAAAAF3OjdRKtnueLk="
+									}
+								},
+								{
+									"_type": "FCDecisionView",
+									"_id": "AAAAAAF3OkRMmNoB2SI=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OkRMl9n/6N8="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF3OkRMmNoCnNE=",
+											"_parent": {
+												"$ref": "AAAAAAF3OkRMmNoB2SI="
+											},
+											"font": "Arial;13;0",
+											"left": 172.542236328125,
+											"top": 967.5,
+											"width": 57.08447265625,
+											"height": 15,
+											"text": "sw4",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 144,
+									"top": 960,
+									"width": 114.1689453125,
+									"height": 30,
+									"nameLabel": {
+										"$ref": "AAAAAAF3OkRMmNoCnNE="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAF3OkS2A9oMNKk=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OkS2A9oKn0c="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAF3OkS2A9oN070=",
+											"_parent": {
+												"$ref": "AAAAAAF3OkS2A9oMNKk="
+											},
+											"model": {
+												"$ref": "AAAAAAF3OkS2A9oKn0c="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 216,
+											"top": 947,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 15,
+											"hostEdge": {
+												"$ref": "AAAAAAF3OkS2A9oMNKk="
+											},
+											"edgePosition": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAF3OkRMmNoB2SI="
+									},
+									"tail": {
+										"$ref": "AAAAAAF3OjYnLNnLm30="
+									},
+									"lineStyle": 2,
+									"points": "202:948;202:960",
+									"nameLabel": {
+										"$ref": "AAAAAAF3OkS2A9oN070="
+									}
+								},
+								{
+									"_type": "FCProcessView",
+									"_id": "AAAAAAF3OklCBNoVhQg=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OklCA9oTtn0="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF3OklCBNoWvjg=",
+											"_parent": {
+												"$ref": "AAAAAAF3OklCBNoVhQg="
+											},
+											"font": "Arial;13;0",
+											"left": 50,
+											"top": 1034,
+											"width": 141,
+											"height": 195,
+											"text": "Bạn bấm vào tầng B2 để lấy xe ô tô. Đột nhiên đang máy khựng lại, bạn đang không hiểu thì sao thì thang máy bị rơi tự do. Bạn cố gắng bám tay vào tay vịn của thang máy, rồi thang máy va chạm mới mặt đất. Đầu của bạn bị đập xuống sàn rất mạnh. Bạn cảm thấy đau khủng khiếp, máu bắt đầu chảy ra. Bạn dần lịm đi.",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 40,
+									"top": 1024,
+									"width": 161,
+									"height": 217,
+									"nameLabel": {
+										"$ref": "AAAAAAF3OklCBNoWvjg="
+									}
+								},
+								{
+									"_type": "FCProcessView",
+									"_id": "AAAAAAF3OklaCdodGBQ=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OklaCNobyBA="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF3OklaCdoePjI=",
+											"_parent": {
+												"$ref": "AAAAAAF3OklaCdodGBQ="
+											},
+											"font": "Arial;13;0",
+											"left": 234,
+											"top": 1034,
+											"width": 189,
+											"height": 234,
+											"text": "Bạn bấm vào tầng 1, ngay lập tức đèn thang máy vụt tắt. Bạn cố gắng bấm vào tầng 1 nhưng có vẻ thang máy không còn hoạt động nữa. Bạn mở đèn flash từ điện thoại để tìm nút gọi khẩn cấp ra bên ngoài. Sau một hồi lâu không có ai nhấc máy, thì đầu dây bên kia có người trả lời. Bạn vội vàng kêu cứu: \"Giúp tôi với, tôi đang ở thang G2 L1. Thang máy bị hỏng rồi tôi không ra ngoài được\". Người bên kia trả lời: \"Xin lỗi nhưng tôi không giúp gì anh được, để tôi tìm xem có ở đây không?\". Bạn bị kẹt lại không biết là bao lâu rồi bạn thiếp đi.",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 224,
+									"top": 1024,
+									"width": 209,
+									"height": 254,
+									"nameLabel": {
+										"$ref": "AAAAAAF3OklaCdoePjI="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAF3Okl129om48Q=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3Okl129okzpc="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAF3Okl129onNQ4=",
+											"_parent": {
+												"$ref": "AAAAAAF3Okl129om48Q="
+											},
+											"model": {
+												"$ref": "AAAAAAF3Okl129okzpc="
+											},
+											"font": "Arial;13;0",
+											"left": 71,
+											"top": 960,
+											"width": 58.53173828125,
+											"height": 13,
+											"alpha": 2.7610852060754265,
+											"distance": 10.770329614269007,
+											"hostEdge": {
+												"$ref": "AAAAAAF3Okl129om48Q="
+											},
+											"edgePosition": 1,
+											"text": "Tầng hầm"
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAF3OklCBNoVhQg="
+									},
+									"tail": {
+										"$ref": "AAAAAAF3OkRMmNoB2SI="
+									},
+									"lineStyle": 2,
+									"points": "144:976;96:976;96:1024",
+									"nameLabel": {
+										"$ref": "AAAAAAF3Okl129onNQ4="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAF3OkoTr9ozw1o=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OkoTr9oxQrI="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAF3OkoTr9o0+9s=",
+											"_parent": {
+												"$ref": "AAAAAAF3OkoTr9ozw1o="
+											},
+											"model": {
+												"$ref": "AAAAAAF3OkoTr9oxQrI="
+											},
+											"font": "Arial;13;0",
+											"left": 271,
+											"top": 959,
+											"width": 54.91357421875,
+											"height": 13,
+											"alpha": -2.60117406718508,
+											"distance": 11.661903789690601,
+											"hostEdge": {
+												"$ref": "AAAAAAF3OkoTr9ozw1o="
+											},
+											"edgePosition": 1,
+											"text": "Tầng một"
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAF3OklaCdodGBQ="
+									},
+									"tail": {
+										"$ref": "AAAAAAF3OkRMmNoB2SI="
+									},
+									"lineStyle": 2,
+									"points": "257:976;304:976;304:1024",
+									"nameLabel": {
+										"$ref": "AAAAAAF3OkoTr9o0+9s="
+									}
+								},
+								{
+									"_type": "FCConnectorView",
+									"_id": "AAAAAAF3OlLVldpMrWI=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OlLVk9pKsLI="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF3OlLVldpNPZA=",
+											"_parent": {
+												"$ref": "AAAAAAF3OlLVldpMrWI="
+											},
+											"font": "Arial;13;0",
+											"left": 96.25,
+											"top": 1276.25,
+											"width": 32.5,
+											"height": 24.5,
+											"text": "Tỉnh giấc",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 80,
+									"top": 1264,
+									"width": 65,
+									"height": 49,
+									"nameLabel": {
+										"$ref": "AAAAAAF3OlLVldpNPZA="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAF3OlMVT9pYlxk=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3OlMVTtpW9Co="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAF3OlMVT9pZQwY=",
+											"_parent": {
+												"$ref": "AAAAAAF3OlMVT9pYlxk="
+											},
+											"model": {
+												"$ref": "AAAAAAF3OlMVTtpW9Co="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 134,
+											"top": 1245,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 15,
+											"hostEdge": {
+												"$ref": "AAAAAAF3OlMVT9pYlxk="
+											},
+											"edgePosition": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAF3OlLVldpMrWI="
+									},
+									"tail": {
+										"$ref": "AAAAAAF3OklCBNoVhQg="
+									},
+									"lineStyle": 2,
+									"points": "120:1240;120:1264",
+									"nameLabel": {
+										"$ref": "AAAAAAF3OlMVT9pZQwY="
+									}
+								},
+								{
+									"_type": "FCConnectorView",
+									"_id": "AAAAAAF3PP2aDfM+wnQ=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3PP2aDfM8pA8="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF3PP2aDfM/Gjc=",
+											"_parent": {
+												"$ref": "AAAAAAF3PP2aDfM+wnQ="
+											},
+											"font": "Arial;13;0",
+											"left": 308.25,
+											"top": 1303.5,
+											"width": 40.5,
+											"height": 15,
+											"text": "Tỉnh giấc",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 288,
+									"top": 1296,
+									"width": 81,
+									"height": 30,
+									"nameLabel": {
+										"$ref": "AAAAAAF3PP2aDfM/Gjc="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAF3PP3OyPNJXzk=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3PP3OyPNHaOU="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAF3PP3OyPNK14Y=",
+											"_parent": {
+												"$ref": "AAAAAAF3PP3OyPNJXzk="
+											},
+											"model": {
+												"$ref": "AAAAAAF3PP3OyPNHaOU="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 342,
+											"top": 1279,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 15,
+											"hostEdge": {
+												"$ref": "AAAAAAF3PP3OyPNJXzk="
+											},
+											"edgePosition": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAF3PP2aDfM+wnQ="
+									},
+									"tail": {
+										"$ref": "AAAAAAF3OklaCdodGBQ="
+									},
+									"lineStyle": 2,
+									"points": "328:1277;328:1296",
+									"nameLabel": {
+										"$ref": "AAAAAAF3PP3OyPNK14Y="
+									}
+								}
+							]
+						},
+						{
+							"_type": "FCProcess",
+							"_id": "AAAAAAF3OfejuNjJpuY=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "Bạn thức dậy sau một giấc ngủ không biết là bao lâu nhưng có cảm giác khá lâu. Đầu bạn đau, cơ thể thì mệt mỏi. Bạn nhận ra mình đang ở trên cái giường quen thuộc của mình, căn phòng tối tăm. Bạn xem đồng hồ đeo tay thấy đang là 2h sáng, bạn nhìn ra ngoài cửa sổ, căn hộ của bạn ở tầng 24 nên tầm nhìn khá rộng. Ngoài trời mưa đang đổ chéo, thỉnh thoảng có tiếng sấm chớp, chỉ còn lại những chiếc đèn đường đang thắp sáng. Bình thường vẫn có những chiếc xe tải chạy ban đêm có tiếng kêu khá khó chịu nhưng bây giờ lại không có chiếc xe nào. Bỗng nhiên có tiếng bước chân nghe khá rõ ở ngoài phòng khách làm bạn chú ý.",
+							"ownedElements": [
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAF3OgK1D9jmveo=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfejuNjJpuY="
+									},
+									"source": {
+										"$ref": "AAAAAAF3OfejuNjJpuY="
+									},
+									"target": {
+										"$ref": "AAAAAAF3OgJqWdjb+is="
+									}
+								}
+							]
+						},
+						{
+							"_type": "FCDecision",
+							"_id": "AAAAAAF3OgJqWdjb+is=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "sw 1",
+							"ownedElements": [
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAF3OgMCs9j/WPw=",
+									"_parent": {
+										"$ref": "AAAAAAF3OgJqWdjb+is="
+									},
+									"name": "Ra ngoài phòng khách",
+									"source": {
+										"$ref": "AAAAAAF3OgJqWdjb+is="
+									},
+									"target": {
+										"$ref": "AAAAAAF3OgLMndjvmUs="
+									}
+								},
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAF3OgOmZtkM3nU=",
+									"_parent": {
+										"$ref": "AAAAAAF3OgJqWdjb+is="
+									},
+									"name": "Ở lại trong phòng",
+									"source": {
+										"$ref": "AAAAAAF3OgJqWdjb+is="
+									},
+									"target": {
+										"$ref": "AAAAAAF3OgLbu9j3Hxg="
+									}
+								}
+							]
+						},
+						{
+							"_type": "FCProcess",
+							"_id": "AAAAAAF3OgLMndjvmUs=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "Bạn mở cửa phòng, bước ra ngoài xem đó là ai. Một bóng người đang đứng ở gần cửa vào và đang nắm tay cửa. Trong bóng tối bạn không nhìn rõ mặt nhưng qua hình dáng bạn có thể nhận ra đó là vợ mình nhưng lẽ ra cô ấy đang ở nhà mẹ cách đây hơn 100km, hai bạn vừa có một cuộc cãi vã nên cô ấy bỏ nhà mẹ và không thèm liên lạc với bạn.",
+							"ownedElements": [
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAF3Ohn2H9k4fSM=",
+									"_parent": {
+										"$ref": "AAAAAAF3OgLMndjvmUs="
+									},
+									"name": "Hỏi vợ mình",
+									"source": {
+										"$ref": "AAAAAAF3OgLMndjvmUs="
+									},
+									"target": {
+										"$ref": "AAAAAAF3OhnVjtkv70A="
+									}
+								}
+							]
+						},
+						{
+							"_type": "FCProcess",
+							"_id": "AAAAAAF3OgLbu9j3Hxg=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "Bạn chấn tĩnh lại bản thân và cho là mình nghe nhầm, bạn quay lại giường để tiếp tục giấc ngủ. Vì đang mệt nên bạn chìm vào giấc ngủ rất nhanh. Bỗng nhiên tiếng Tivi ở ngoài phòng khách làm bạn thức giấc lần nữa. Bạn xem đồng hồ, đang là 2h30, ngoài trời mưa gió đã bớt đi."
+						},
+						{
+							"_type": "FCProcess",
+							"_id": "AAAAAAF3OhnVjtkv70A=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "Bạn cất tiếng hỏi: \"Em về rồi đấy à Ngọc? Anh xin lỗi, em hãy nghe...\". \"Tại sao anh lại làm thế?\" - cô ấy ngắt lời bạn. \"Mọi chuyện không như em nghĩ đâu\". Ngay khi bạn vừa nói hết câu, cô ấy ngay lập tức mở cửa bước ra ngoài và đóng cửa rất mạnh. Bạn nhanh chóng mở cửa để đuổi theo nhưng nhìn bên ngoài không thấy ai cả. Bạn suy nghĩ nên đi về phía bên trái có thang máy hay bên phải có thang bộ. ",
+							"ownedElements": [
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAF3OicRQdlk7Rw=",
+									"_parent": {
+										"$ref": "AAAAAAF3OhnVjtkv70A="
+									},
+									"source": {
+										"$ref": "AAAAAAF3OhnVjtkv70A="
+									},
+									"target": {
+										"$ref": "AAAAAAF3OibGdtlZ8sc="
+									}
+								}
+							]
+						},
+						{
+							"_type": "FCDecision",
+							"_id": "AAAAAAF3OibGdtlZ8sc=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "sw 2",
+							"ownedElements": [
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAF3OidOCNl1SA0=",
+									"_parent": {
+										"$ref": "AAAAAAF3OibGdtlZ8sc="
+									},
+									"name": "Đi về phía thang máy",
+									"source": {
+										"$ref": "AAAAAAF3OibGdtlZ8sc="
+									},
+									"target": {
+										"$ref": "AAAAAAF3Oic4LNltZBo="
+									}
+								},
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAF3OimDG9mN8JQ=",
+									"_parent": {
+										"$ref": "AAAAAAF3OibGdtlZ8sc="
+									},
+									"name": "Đi về phía thang bộ",
+									"source": {
+										"$ref": "AAAAAAF3OibGdtlZ8sc="
+									},
+									"target": {
+										"$ref": "AAAAAAF3OilpddmF6F4="
+									}
+								}
+							]
+						},
+						{
+							"_type": "FCProcess",
+							"_id": "AAAAAAF3Oic4LNltZBo=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "Bạn đi đến khu thang máy và nhanh tay bấm nút thang xuống liên tục. Có 2 thang cùng mở cửa một lúc, bạn cảm thấy khá lạ vì thường ngày chỉ có một thang máy đón người cùng thời điểm. Bạn nghĩ xem nên vào thang bên trái hay bên phải.",
+							"ownedElements": [
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAF3OjVKzNm/MEQ=",
+									"_parent": {
+										"$ref": "AAAAAAF3Oic4LNltZBo="
+									},
+									"source": {
+										"$ref": "AAAAAAF3Oic4LNltZBo="
+									},
+									"target": {
+										"$ref": "AAAAAAF3OjTaYdm0HHw="
+									}
+								}
+							]
+						},
+						{
+							"_type": "FCProcess",
+							"_id": "AAAAAAF3OilpddmF6F4=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "Process2"
+						},
+						{
+							"_type": "FCDecision",
+							"_id": "AAAAAAF3OjTaYdm0HHw=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "sw3",
+							"ownedElements": [
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAF3OjbVwdnc08E=",
+									"_parent": {
+										"$ref": "AAAAAAF3OjTaYdm0HHw="
+									},
+									"name": "Thang bên trái",
+									"source": {
+										"$ref": "AAAAAAF3OjTaYdm0HHw="
+									},
+									"target": {
+										"$ref": "AAAAAAF3OjYnK9nJmXE="
+									}
+								},
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAF3OjdRKtnroAs=",
+									"_parent": {
+										"$ref": "AAAAAAF3OjTaYdm0HHw="
+									},
+									"name": "Thang bên phải",
+									"source": {
+										"$ref": "AAAAAAF3OjTaYdm0HHw="
+									},
+									"target": {
+										"$ref": "AAAAAAF3Ojadk9nSIlI="
+									}
+								}
+							]
+						},
+						{
+							"_type": "FCProcess",
+							"_id": "AAAAAAF3OjYnK9nJmXE=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "Bạn bước vào thang máy, nghĩ xem nên xuống tầng hầm hay tầng một. Đèn thang máy có vẻ  hơi chập chờn.",
+							"ownedElements": [
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAF3OkS2A9oKn0c=",
+									"_parent": {
+										"$ref": "AAAAAAF3OjYnK9nJmXE="
+									},
+									"source": {
+										"$ref": "AAAAAAF3OjYnK9nJmXE="
+									},
+									"target": {
+										"$ref": "AAAAAAF3OkRMl9n/6N8="
+									}
+								}
+							]
+						},
+						{
+							"_type": "FCProcess",
+							"_id": "AAAAAAF3Ojadk9nSIlI=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "Bạn bước vào thang máy và nghĩ xem nên xuống tầng một hay tầng hầm. Trong khi bạn đang suy nghĩ thì thang máy mở cửa ở tầng 12A. Một cô gái xách chiếc vali vội vàng chạy vào, có vẻ như cô ấy đang khóc. Cô gái nhanh chóng bấm đóng của thang sau đó hỏi bạn: \"Anh xuống thang nào vậy?\""
+						},
+						{
+							"_type": "FCDecision",
+							"_id": "AAAAAAF3OkRMl9n/6N8=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "sw4",
+							"ownedElements": [
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAF3Okl129okzpc=",
+									"_parent": {
+										"$ref": "AAAAAAF3OkRMl9n/6N8="
+									},
+									"name": "Tầng hầm",
+									"source": {
+										"$ref": "AAAAAAF3OkRMl9n/6N8="
+									},
+									"target": {
+										"$ref": "AAAAAAF3OklCA9oTtn0="
+									}
+								},
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAF3OkoTr9oxQrI=",
+									"_parent": {
+										"$ref": "AAAAAAF3OkRMl9n/6N8="
+									},
+									"name": "Tầng một",
+									"source": {
+										"$ref": "AAAAAAF3OkRMl9n/6N8="
+									},
+									"target": {
+										"$ref": "AAAAAAF3OklaCNobyBA="
+									}
+								}
+							]
+						},
+						{
+							"_type": "FCProcess",
+							"_id": "AAAAAAF3OklCA9oTtn0=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "Bạn bấm vào tầng B2 để lấy xe ô tô. Đột nhiên đang máy khựng lại, bạn đang không hiểu thì sao thì thang máy bị rơi tự do. Bạn cố gắng bám tay vào tay vịn của thang máy, rồi thang máy va chạm mới mặt đất. Đầu của bạn bị đập xuống sàn rất mạnh. Bạn cảm thấy đau khủng khiếp, máu bắt đầu chảy ra. Bạn dần lịm đi.",
+							"ownedElements": [
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAF3OlMVTtpW9Co=",
+									"_parent": {
+										"$ref": "AAAAAAF3OklCA9oTtn0="
+									},
+									"source": {
+										"$ref": "AAAAAAF3OklCA9oTtn0="
+									},
+									"target": {
+										"$ref": "AAAAAAF3OlLVk9pKsLI="
+									}
+								}
+							]
+						},
+						{
+							"_type": "FCProcess",
+							"_id": "AAAAAAF3OklaCNobyBA=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "Bạn bấm vào tầng 1, ngay lập tức đèn thang máy vụt tắt. Bạn cố gắng bấm vào tầng 1 nhưng có vẻ thang máy không còn hoạt động nữa. Bạn mở đèn flash từ điện thoại để tìm nút gọi khẩn cấp ra bên ngoài. Sau một hồi lâu không có ai nhấc máy, thì đầu dây bên kia có người trả lời. Bạn vội vàng kêu cứu: \"Giúp tôi với, tôi đang ở thang G2 L1. Thang máy bị hỏng rồi tôi không ra ngoài được\". Người bên kia trả lời: \"Xin lỗi nhưng tôi không giúp gì anh được, để tôi tìm xem có ở đây không?\". Bạn bị kẹt lại không biết là bao lâu rồi bạn thiếp đi.",
+							"ownedElements": [
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAF3PP3OyPNHaOU=",
+									"_parent": {
+										"$ref": "AAAAAAF3OklaCNobyBA="
+									},
+									"source": {
+										"$ref": "AAAAAAF3OklaCNobyBA="
+									},
+									"target": {
+										"$ref": "AAAAAAF3PP2aDfM8pA8="
+									}
+								}
+							]
+						},
+						{
+							"_type": "FCConnector",
+							"_id": "AAAAAAF3OlLVk9pKsLI=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "Tỉnh giấc"
+						},
+						{
+							"_type": "FCConnector",
+							"_id": "AAAAAAF3PP2aDfM8pA8=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "Tỉnh giấc"
+						}
+					]
+				}
+			]
+		}
+	]
+}
