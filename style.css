@@ -1,0 +1,37 @@
+body {
+    background-image: url("galaxy.jpg") ;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+.selection, .title, .content {
+    border: solid black 1px;
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.685);
+}
+
+.content {
+    padding: 20px;
+}
+
+.selection {
+    text-align: center;
+    padding: 5px 15px;
+}
+
+.selection:hover {
+    color: white;
+    background-color: rgb(245, 75, 8);
+    animation: LtoR 1s infinite;
+}
+
+@keyframes LtoR {
+    from {font-size: medium; font-weight: normal;}
+    to {font-size: large; font-weight: bold;}
+}
+
+.container {
+    max-width: 1000px;
+}
