@@ -565,19 +565,19 @@
 												"$ref": "AAAAAAF3OilpdtmHKo8="
 											},
 											"font": "Arial;13;0",
-											"left": 1746,
+											"left": 1674,
 											"top": 682,
-											"width": 54.18994140625,
-											"height": 13,
-											"text": "Process2",
+											"width": 189,
+											"height": 182,
+											"text": "Bạn mở của thang bộ và nghe thấy có tiếng bước chân đang chạy ở khoảng mười tầng phía dưới. Bạn vội vàng chạy theo, vừa chạy vừa gọi \"Ngọc ơi chờ anh\". Bạn không nghĩ là vợ bạn chạy nhanh đến vậy, bạn càng chạy nhanh, tiếng bước chân càng nhanh hơn. Bỗng nhiên đèn thang bộ vụt tắt, bạn bị lỡ đà và ngã xuống. Bạn lăn không biết bao nhiêu bậc thang cho đến khi đầu bạn va đập với tường khiến bạn ngất đi.",
 											"wordWrap": true
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 1736,
+									"left": 1664,
 									"top": 672,
-									"width": 74.18994140625,
-									"height": 33,
+									"width": 209,
+									"height": 202,
 									"nameLabel": {
 										"$ref": "AAAAAAF3OilpdtmICtQ="
 									}
@@ -2080,8 +2080,8 @@
 											"left": 642,
 											"top": 1498,
 											"width": 204,
-											"height": 65,
-											"text": "Có một chiếc xe con đi từ chung cư ra nhanh chóng bám theo xe bạn. Phương nhìn vào gương chiếu hậu rồi hoảng hốt: \"Là chồng em, anh mau chạy nhanh lên\"",
+											"height": 143,
+											"text": "Có một chiếc xe con đi từ chung cư ra nhanh chóng bám theo xe bạn. Phương nhìn vào gương chiếu hậu rồi hoảng hốt: \"Là chồng em, anh mau chạy nhanh lên\". Bạn tăng tốc cố gắng bỏ xa  chiếc xe phía sau. Đi được một đoạn thì gặp đèn đỏ, Phương giục bạn: \"Không có xe nào đâu, anh cứ vượt đi\". Bạn suy nghĩ có nên vượt đèn đỏ không?",
 											"wordWrap": true
 										}
 									],
@@ -2089,7 +2089,7 @@
 									"left": 632,
 									"top": 1488,
 									"width": 224,
-									"height": 136,
+									"height": 163,
 									"nameLabel": {
 										"$ref": "AAAAAAF3QymSjqEdI60="
 									}
@@ -2138,6 +2138,324 @@
 									"points": "743:1450;743:1488",
 									"nameLabel": {
 										"$ref": "AAAAAAF3QymsCaEl1R8="
+									}
+								},
+								{
+									"_type": "FCDecisionView",
+									"_id": "AAAAAAF3TCrSbT9fN3k=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3TCrSbD9dxzg="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF3TCrSbT9gTKk=",
+											"_parent": {
+												"$ref": "AAAAAAF3TCrSbT9fN3k="
+											},
+											"font": "Arial;13;0",
+											"left": 716.542236328125,
+											"top": 1679.5,
+											"width": 57.08447265625,
+											"height": 15,
+											"text": "Decision2",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 688,
+									"top": 1672,
+									"width": 114.1689453125,
+									"height": 30,
+									"nameLabel": {
+										"$ref": "AAAAAAF3TCrSbT9gTKk="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAF3TCtFlT9pG3E=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3TCtFlD9nb7U="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAF3TCtFlT9qmnE=",
+											"_parent": {
+												"$ref": "AAAAAAF3TCtFlT9pG3E="
+											},
+											"model": {
+												"$ref": "AAAAAAF3TCtFlD9nb7U="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 758,
+											"top": 1654,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 15,
+											"hostEdge": {
+												"$ref": "AAAAAAF3TCtFlT9pG3E="
+											},
+											"edgePosition": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAF3TCrSbT9fN3k="
+									},
+									"tail": {
+										"$ref": "AAAAAAF3QymSjqEcrFE="
+									},
+									"lineStyle": 2,
+									"points": "744:1650;744:1672",
+									"nameLabel": {
+										"$ref": "AAAAAAF3TCtFlT9qmnE="
+									}
+								},
+								{
+									"_type": "FCProcessView",
+									"_id": "AAAAAAF3TCthVz9zRl0=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3TCthVz9xSfc="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF3TCthVz90Zfg=",
+											"_parent": {
+												"$ref": "AAAAAAF3TCthVz9zRl0="
+											},
+											"font": "Arial;13;0",
+											"left": 490,
+											"top": 1738,
+											"width": 173,
+											"height": 130,
+											"text": "Bạn giữ tốc độ để đi qua ngã tư thật nhanh. Khi bạn đang ở giữa ngã tư, một chiếc xe tải ở đường bên cạnh đang lao như tên bắn qua. Bạn cố gắng xoay sở nhưng không kịp nữa. Chiếc xe tải đâm vào ngang xe của bạn rất mạnh. Bạn chỉ kịp cảm thấy mọi thứ vỡ vụn rồi tối đen",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 480,
+									"top": 1728,
+									"width": 193,
+									"height": 150,
+									"nameLabel": {
+										"$ref": "AAAAAAF3TCthVz90Zfg="
+									}
+								},
+								{
+									"_type": "FCProcessView",
+									"_id": "AAAAAAF3TCtwmj97ErU=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3TCtwmj95M/Q="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF3TCtwmj985yA=",
+											"_parent": {
+												"$ref": "AAAAAAF3TCtwmj97ErU="
+											},
+											"font": "Arial;13;0",
+											"left": 738,
+											"top": 1738,
+											"width": 173,
+											"height": 169,
+											"text": "Bạn quyết định dừng xe lại, đúng lúc đó có một chiếc xe tải phóng rất nhanh qua, chấp hành luật bao giờ cũng tốt mà. Chiếc xe phía sau đã bắt kịp 2 người, bạn nghĩ cần phải giải thích đôi lời với anh ta. Bạn nói: \"Để anh nói chuyện với chồng em\". Phương cản: \"Anh không nên làm thế đâu\". \"Không sao đâu\" - bạn nói rồi mở cửa xe đi xuống.",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 728,
+									"top": 1728,
+									"width": 193,
+									"height": 189,
+									"nameLabel": {
+										"$ref": "AAAAAAF3TCtwmj985yA="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAF3TCt9tz+D+sU=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3TCt9tz+BTTw="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAF3TCt9tz+Erhw=",
+											"_parent": {
+												"$ref": "AAAAAAF3TCt9tz+D+sU="
+											},
+											"model": {
+												"$ref": "AAAAAAF3TCt9tz+BTTw="
+											},
+											"font": "Arial;13;0",
+											"left": 591,
+											"top": 1696,
+											"width": 29.51025390625,
+											"height": 13,
+											"alpha": 1.1341690447185466,
+											"distance": 33.1058907144937,
+											"hostEdge": {
+												"$ref": "AAAAAAF3TCt9tz+D+sU="
+											},
+											"edgePosition": 1,
+											"text": "Vượt"
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAF3TCthVz9zRl0="
+									},
+									"tail": {
+										"$ref": "AAAAAAF3TCrSbT9fN3k="
+									},
+									"lineStyle": 2,
+									"points": "688:1688;576:1688;576:1728",
+									"nameLabel": {
+										"$ref": "AAAAAAF3TCt9tz+Erhw="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAF3TCxBJz+Vu0o=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3TCxBJj+T9ck="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAF3TCxBJz+WjEk=",
+											"_parent": {
+												"$ref": "AAAAAAF3TCxBJz+Vu0o="
+											},
+											"model": {
+												"$ref": "AAAAAAF3TCxBJj+T9ck="
+											},
+											"font": "Arial;13;0",
+											"left": 818,
+											"top": 1695,
+											"width": 32.55078125,
+											"height": 13,
+											"alpha": -1.1210368287201982,
+											"distance": 32.202484376209235,
+											"hostEdge": {
+												"$ref": "AAAAAAF3TCxBJz+Vu0o="
+											},
+											"edgePosition": 1,
+											"text": "Dừng"
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAF3TCtwmj97ErU="
+									},
+									"tail": {
+										"$ref": "AAAAAAF3TCrSbT9fN3k="
+									},
+									"lineStyle": 2,
+									"points": "801:1688;864:1688;864:1728",
+									"nameLabel": {
+										"$ref": "AAAAAAF3TCxBJz+WjEk="
+									}
+								},
+								{
+									"_type": "FCProcessView",
+									"_id": "AAAAAAF3TD6eLz+wR3Q=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3TD6eLj+uTi4="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAF3TD6eLz+xgys=",
+											"_parent": {
+												"$ref": "AAAAAAF3TD6eLz+wR3Q="
+											},
+											"font": "Arial;13;0",
+											"left": 738,
+											"top": 1970,
+											"width": 172,
+											"height": 130,
+											"text": "Chiếc xe của anh chàng kia có vẻ không có ý định dừng lại. Bạn ra hiệu cho anh ta dừng xe nhưng như một con quái thú, chiếc xe đang lao thẳng về phía bạn. Bạn bị chiếc xe đâm với vận tốc cao, bạn chỉ kịp cảm thấy những mảnh xương của mình bị vỡ ra cắm vào da thịt",
+											"wordWrap": true
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 728,
+									"top": 1960,
+									"width": 192,
+									"height": 150,
+									"nameLabel": {
+										"$ref": "AAAAAAF3TD6eLz+xgys="
+									}
+								},
+								{
+									"_type": "FCFlowView",
+									"_id": "AAAAAAF3TD6wOz+47Z0=",
+									"_parent": {
+										"$ref": "AAAAAAF3OfdXQdjFOhg="
+									},
+									"model": {
+										"$ref": "AAAAAAF3TD6wOz+2sSk="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAF3TD6wOz+5ako=",
+											"_parent": {
+												"$ref": "AAAAAAF3TD6wOz+47Z0="
+											},
+											"model": {
+												"$ref": "AAAAAAF3TD6wOz+2sSk="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 837,
+											"top": 1931,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 15,
+											"hostEdge": {
+												"$ref": "AAAAAAF3TD6wOz+47Z0="
+											},
+											"edgePosition": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+										"$ref": "AAAAAAF3TD6eLz+wR3Q="
+									},
+									"tail": {
+										"$ref": "AAAAAAF3TCtwmj97ErU="
+									},
+									"lineStyle": 2,
+									"points": "823:1916;823:1960",
+									"nameLabel": {
+										"$ref": "AAAAAAF3TD6wOz+5ako="
 									}
 								}
 							]
@@ -2325,7 +2643,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF3OfdXQdjEDw4="
 							},
-							"name": "Process2"
+							"name": "Bạn mở của thang bộ và nghe thấy có tiếng bước chân đang chạy ở khoảng mười tầng phía dưới. Bạn vội vàng chạy theo, vừa chạy vừa gọi \"Ngọc ơi chờ anh\". Bạn không nghĩ là vợ bạn chạy nhanh đến vậy, bạn càng chạy nhanh, tiếng bước chân càng nhanh hơn. Bỗng nhiên đèn thang bộ vụt tắt, bạn bị lỡ đà và ngã xuống. Bạn lăn không biết bao nhiêu bậc thang cho đến khi đầu bạn va đập với tường khiến bạn ngất đi."
 						},
 						{
 							"_type": "FCDecision",
@@ -2750,7 +3068,99 @@
 							"_parent": {
 								"$ref": "AAAAAAF3OfdXQdjEDw4="
 							},
-							"name": "Có một chiếc xe con đi từ chung cư ra nhanh chóng bám theo xe bạn. Phương nhìn vào gương chiếu hậu rồi hoảng hốt: \"Là chồng em, anh mau chạy nhanh lên\""
+							"name": "Có một chiếc xe con đi từ chung cư ra nhanh chóng bám theo xe bạn. Phương nhìn vào gương chiếu hậu rồi hoảng hốt: \"Là chồng em, anh mau chạy nhanh lên\". Bạn tăng tốc cố gắng bỏ xa  chiếc xe phía sau. Đi được một đoạn thì gặp đèn đỏ, Phương giục bạn: \"Không có xe nào đâu, anh cứ vượt đi\". Bạn suy nghĩ có nên vượt đèn đỏ không?",
+							"ownedElements": [
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAF3TCtFlD9nb7U=",
+									"_parent": {
+										"$ref": "AAAAAAF3QymSjaEaanU="
+									},
+									"source": {
+										"$ref": "AAAAAAF3QymSjaEaanU="
+									},
+									"target": {
+										"$ref": "AAAAAAF3TCrSbD9dxzg="
+									}
+								}
+							]
+						},
+						{
+							"_type": "FCDecision",
+							"_id": "AAAAAAF3TCrSbD9dxzg=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "Decision2",
+							"ownedElements": [
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAF3TCt9tz+BTTw=",
+									"_parent": {
+										"$ref": "AAAAAAF3TCrSbD9dxzg="
+									},
+									"name": "Vượt",
+									"source": {
+										"$ref": "AAAAAAF3TCrSbD9dxzg="
+									},
+									"target": {
+										"$ref": "AAAAAAF3TCthVz9xSfc="
+									}
+								},
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAF3TCxBJj+T9ck=",
+									"_parent": {
+										"$ref": "AAAAAAF3TCrSbD9dxzg="
+									},
+									"name": "Dừng",
+									"source": {
+										"$ref": "AAAAAAF3TCrSbD9dxzg="
+									},
+									"target": {
+										"$ref": "AAAAAAF3TCtwmj95M/Q="
+									}
+								}
+							]
+						},
+						{
+							"_type": "FCProcess",
+							"_id": "AAAAAAF3TCthVz9xSfc=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "Bạn giữ tốc độ để đi qua ngã tư thật nhanh. Khi bạn đang ở giữa ngã tư, một chiếc xe tải ở đường bên cạnh đang lao như tên bắn qua. Bạn cố gắng xoay sở nhưng không kịp nữa. Chiếc xe tải đâm vào ngang xe của bạn rất mạnh. Bạn chỉ kịp cảm thấy mọi thứ vỡ vụn rồi tối đen"
+						},
+						{
+							"_type": "FCProcess",
+							"_id": "AAAAAAF3TCtwmj95M/Q=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "Bạn quyết định dừng xe lại, đúng lúc đó có một chiếc xe tải phóng rất nhanh qua, chấp hành luật bao giờ cũng tốt mà. Chiếc xe phía sau đã bắt kịp 2 người, bạn nghĩ cần phải giải thích đôi lời với anh ta. Bạn nói: \"Để anh nói chuyện với chồng em\". Phương cản: \"Anh không nên làm thế đâu\". \"Không sao đâu\" - bạn nói rồi mở cửa xe đi xuống.",
+							"ownedElements": [
+								{
+									"_type": "FCFlow",
+									"_id": "AAAAAAF3TD6wOz+2sSk=",
+									"_parent": {
+										"$ref": "AAAAAAF3TCtwmj95M/Q="
+									},
+									"source": {
+										"$ref": "AAAAAAF3TCtwmj95M/Q="
+									},
+									"target": {
+										"$ref": "AAAAAAF3TD6eLj+uTi4="
+									}
+								}
+							]
+						},
+						{
+							"_type": "FCProcess",
+							"_id": "AAAAAAF3TD6eLj+uTi4=",
+							"_parent": {
+								"$ref": "AAAAAAF3OfdXQdjEDw4="
+							},
+							"name": "Chiếc xe của anh chàng kia có vẻ không có ý định dừng lại. Bạn ra hiệu cho anh ta dừng xe nhưng như một con quái thú, chiếc xe đang lao thẳng về phía bạn. Bạn bị chiếc xe đâm với vận tốc cao, bạn chỉ kịp cảm thấy những mảnh xương của mình bị vỡ ra cắm vào da thịt"
 						}
 					]
 				}
